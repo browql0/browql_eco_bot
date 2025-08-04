@@ -1,29 +1,23 @@
 # 🤖 browql – Advanced Discord Economy Bot
 
-Created by browql
-Discord: @browql
+Created by **browql**  
+Discord: `@browql`
 
-<img width="919" height="484" alt="image" src="https://github.com/user-attachments/assets/57158a09-a61c-4852-a5af-a0c3b1667834" />
+<img width="919" height="484" alt="browql bot preview" src="https://github.com/user-attachments/assets/57158a09-a61c-4852-a5af-a0c3b1667834" />
 
+---
 
-
-
-
-
-
---- 
 **browql** is a powerful and customizable Discord bot built with a full virtual economy system. It features banking, gambling, investments, leaderboards, and owner-only admin tools — all wrapped in a sleek, dark-themed design.
-
 
 ---
 
 ## 🛠 Features
 
-- 💰 Full economy system: work, daily, bank, loan, steal, invest, casino, and more
+- 💰 Full economy system: `work`, `daily`, `bank`, `loan`, `steal`, `invest`, `casino`, and more
 - 📊 Leaderboard tracking
-- 🛡 Owner commands: blacklist, derank, set prefix, etc.
+- 🛡 Owner commands: `blacklist`, `derank`, `set prefix`, etc.
 - 🔧 Modular and easy to configure
-- 🌐 Slash-compatible (optional upgrade)
+- 🌐 Slash-compatible *(optional future upgrade)*
 - 💻 Built with Node.js and Discord.js
 
 ---
@@ -32,18 +26,26 @@ Discord: @browql
 
 Follow these steps to get the bot running on your server:
 
-### 1. **Clone the repository**
+### 1. Clone the repository
 
---- bash
+```bash
 git clone https://github.com/browql0/browql_eco_bot.git
 cd browql_eco_bot
+```
 
-###   2. **Make sure you have Node.js installed, then run**
+### 2. Install dependencies
+
+Make sure you have [Node.js](https://nodejs.org) installed, then run:
+
+```bash
 npm install
+```
 
-###   3. **Configure the bot**
+### 3. Configure the bot
 
-Create a file called config.json in the root folder, and paste the following:
+Create a file called `config.json` in the root folder, and paste the following:
+
+```json
 {
   "TOKEN": "YOUR_TOKEN_HERE",
   "owner": ["YOUR_USER_ID"],
@@ -51,27 +53,32 @@ Create a file called config.json in the root folder, and paste the following:
   "prefix": "!",
   "activite": "Managing the economy"
 }
+```
 
 Replace the placeholders:
+- `YOUR_TOKEN_HERE`: your bot token (from the [Discord Developer Portal](https://discord.com/developers/applications))
+- `YOUR_USER_ID`: your Discord user ID
+- `YOUR_CLIENT_ID`: your bot’s application/client ID
+- `!`: your preferred command prefix
+- `activite`: status text shown under the bot’s name
 
-YOUR_TOKEN_HERE: your bot token (from Discord Developer Portal)
+### 4. Run the bot
 
-YOUR_USER_ID: your Discord user ID
+```bash
+node index.js
+```
 
-YOUR_CLIENT_ID: your bot’s application/client ID
+Or, alternatively:
 
-!: the prefix you want to use (ex: !, ?, etc.)
+```bash
+node .
+```
 
-activite: text the bot shows as its status
-
-###   4. **Run the bot**
-
-node index.js or node .
-
-----
+---
 
 ## 📁 Project Structure
 
+```text
 .
 ├── commands/           # All command files
 │   ├── eco/            # Economy-related commands
@@ -83,4 +90,23 @@ node index.js or node .
 ├── json.sqlite         # SQLite database file
 ├── package.json        # Project metadata and scripts
 └── README.md           # Project documentation
+```
 
+---
+
+## 🔒 .gitignore recommendation
+
+```gitignore
+node_modules/
+config.json
+json.sqlite
+.env
+```
+
+---
+
+## 🪪 License
+
+MIT — free to use, modify, and share.
+
+---
