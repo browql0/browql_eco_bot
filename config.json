@@ -1,0 +1,9 @@
+{
+    "TOKEN": "Your token ID",
+    "owner": [
+        "Your user Id"
+    ],
+    "CLIEN_ID": "Your bot Id",
+    "prefix": "YOUR prefix",
+    "activite": "Your activity"
+}
