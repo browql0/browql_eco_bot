@@ -3,8 +3,17 @@
 Created by browql
 Discord: @browql
 
-**browql** is a powerful and customizable Discord bot built with a full virtual economy system. It features banking, gambling, investments, leaderboards, and owner-only admin tools — all wrapped in a sleek, dark-themed design.
 <img width="919" height="484" alt="image" src="https://github.com/user-attachments/assets/57158a09-a61c-4852-a5af-a0c3b1667834" />
+
+
+
+
+
+
+
+--- 
+**browql** is a powerful and customizable Discord bot built with a full virtual economy system. It features banking, gambling, investments, leaderboards, and owner-only admin tools — all wrapped in a sleek, dark-themed design.
+
 
 ---
 
@@ -64,12 +73,14 @@ node index.js or node .
 ## 📁 Project Structure
 
 .
-├── commands/
-│ ├── eco/ # Economy-related commands
-│ └── owner/ # Owner/admin commands
-├── events/ # Event handlers (e.g. ready, message)
-├── node_modules/ # Dependencies
-├── config.json # Bot configuration (not committed)
-├── index.js # Main entry point
-├── json.sqlite # SQLite database file
-├── package.json # Project metadata and scripts
+├── commands/           # All command files
+│   ├── eco/            # Economy-related commands
+│   └── owner/          # Owner/admin commands
+├── events/             # Event handlers (e.g. ready, message)
+├── node_modules/       # Dependencies
+├── config.json         # Bot configuration (not committed)
+├── index.js            # Main entry point
+├── json.sqlite         # SQLite database file
+├── package.json        # Project metadata and scripts
+└── README.md           # Project documentation
+
